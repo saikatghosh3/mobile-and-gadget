@@ -1,0 +1,10 @@
+
+> nextjs@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+  ▲ Next.js 13.5.1
+  - Local:        http://localhost:3001
+  - Environments: .env
+
+ ✓ Ready in 2.9s
