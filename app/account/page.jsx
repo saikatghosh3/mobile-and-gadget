@@ -122,7 +122,7 @@ export default function AccountDashboard() {
         ) : (
           <div className="divide-y divide-neutral-100">
             {stats.recentOrders.map((order) => (
-              <div key={order._id} className="p-5 flex items-center justify-between">
+              <div key={order._id} className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <div>
                   <p className="text-sm font-semibold text-neutral-900">{order.orderNumber}</p>
                   <p className="text-xs text-neutral-500 mt-0.5">

@@ -826,7 +826,7 @@ function CheckoutPageContent() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Checkout Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl border border-neutral-200 p-6">
+              <div className="bg-white rounded-2xl border border-neutral-200 p-4 sm:p-6">
                 <h2 className="font-semibold text-lg text-neutral-900 mb-6">
                   Checkout
                 </h2>
@@ -913,7 +913,7 @@ function CheckoutPageContent() {
                           required
                         />
                       </div>
-                      <div className="grid grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <Label htmlFor="city">City</Label>
                           <Input
@@ -936,7 +936,7 @@ function CheckoutPageContent() {
                           />
                         </div>
                       </div>
-                      <div className="grid grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                           <Label htmlFor="zipCode">ZIP / Postal Code</Label>
                           <Input

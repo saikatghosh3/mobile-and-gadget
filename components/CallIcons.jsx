@@ -27,7 +27,7 @@ export default function CallIcons() {
   return (
     <>
       {isVisible && (
-        <div className="fixed bottom-20 left-8 z-40 flex flex-col items-center gap-3">
+        <div className="fixed bottom-20 left-4 md:left-8 z-40 flex flex-col items-center gap-3">
           {expanded && (
             <>
               <a

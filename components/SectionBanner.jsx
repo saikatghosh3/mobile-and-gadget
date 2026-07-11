@@ -8,7 +8,7 @@ export default function SectionBanner({ banner }) {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Link href={href} className="block relative w-full overflow-hidden rounded-xl group">
-        <div className="relative aspect-[4/1] min-h-[160px] md:min-h-[200px]">
+        <div className="relative aspect-[4/1] min-h-[100px] sm:min-h-[140px] md:min-h-[160px] lg:min-h-[200px]">
           <img
             src={banner.image}
             alt="Banner"

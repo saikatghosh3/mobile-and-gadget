@@ -35,7 +35,7 @@ export default function ProductDetailsAd() {
         href={ad.link || '/shop'}
         className="block"
       >
-        <div className="relative aspect-[4/1] overflow-hidden bg-neutral-100">
+        <div className="relative aspect-[3/1] sm:aspect-[4/1] min-h-[100px] sm:min-h-[140px] overflow-hidden bg-neutral-100">
           <img
             src={ad.image}
             alt="Advertisement"

@@ -8,18 +8,18 @@ export default function FeaturedProducts({ featuredProducts = [], loading = fals
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-10 md:mb-12">
           <div>
-            <h2 className="text-3xl font-bold text-neutral-900">
+            <h2 className="text-2xl md:text-3xl font-bold text-neutral-900">
               Featured Products
             </h2>
-            <p className="text-neutral-600 mt-2">
+            <p className="text-neutral-600 mt-1 md:mt-2 text-sm md:text-base">
               Hand-picked products just for you
             </p>
           </div>
           <Link
             href="/shop"
-            className="text-orange-500 hover:text-orange-600 font-medium inline-flex items-center gap-1"
+            className="text-orange-500 hover:text-orange-600 font-medium inline-flex items-center gap-1 flex-shrink-0"
           >
             View All <ArrowRight className="w-4 h-4" />
           </Link>

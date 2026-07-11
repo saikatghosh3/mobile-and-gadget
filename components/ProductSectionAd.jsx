@@ -36,7 +36,7 @@ export default function ProductSectionAd({ position = 0 }) {
           href={ad.link || '/shop'}
           className="group block rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
         >
-          <div className="relative aspect-[4/1] overflow-hidden bg-neutral-100">
+          <div className="relative aspect-[3/1] sm:aspect-[4/1] min-h-[120px] sm:min-h-[160px] overflow-hidden bg-neutral-100">
             <img
               src={ad.image}
               alt="Advertisement"

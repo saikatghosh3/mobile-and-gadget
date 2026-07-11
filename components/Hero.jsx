@@ -88,36 +88,36 @@ export default function Hero({ ads = [] }) {
   const heroAd = ads && ads.length > 0 ? ads[0] : null;
 
   return (
-    <div className="relative h-[550px] bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 overflow-hidden">
+    <div className="relative min-h-[400px] md:min-h-[500px] lg:h-[550px] bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-orange-500/20 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-        <div className="flex gap-8 items-center w-full justify-between">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center py-12 md:py-0">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-center w-full justify-between">
           
           {/* Left Side - Static Content */}
-          <div className="flex-1 space-y-6">
+          <div className="flex-1 space-y-4 md:space-y-6 text-center lg:text-left">
   
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
               Discover Premium{' '}
               <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                 Mobiles & Gadgets
               </span>
             </h1>
             
-            <p className="text-lg text-neutral-300 max-w-lg leading-relaxed">
+            <p className="text-base md:text-lg text-neutral-300 max-w-lg leading-relaxed mx-auto lg:mx-0">
               Experience the latest technology at unbeatable prices. Quality products, 
               fast delivery, and exceptional customer service.
             </p>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3 md:gap-4 justify-center lg:justify-start">
               <Link
                 href="/shop"
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3.5 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2 shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2 shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 text-sm md:text-base"
               >
                 Shop Now 
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -125,14 +125,14 @@ export default function Hero({ ads = [] }) {
               
               <Link
                 href="/about"
-                className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-3.5 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2 border border-white/20"
+                className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-6 md:px-8 py-3 md:py-3.5 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2 border border-white/20 text-sm md:text-base"
               >
                 Learn More
               </Link>
             </div>
             
             {/* Trust Indicators */}
-            <div className="flex gap-6 pt-4">
+            <div className="flex gap-4 md:gap-6 pt-4 justify-center lg:justify-start flex-wrap">
               {['Free Shipping', '24/7 Support', 'Secure Payment'].map((text) => (
                 <div key={text} className="flex items-center gap-2">
                   <div className="w-1 h-1 bg-green-400 rounded-full" />
@@ -142,9 +142,9 @@ export default function Hero({ ads = [] }) {
             </div>
           </div>
 
-          {/* Right Side - Dynamic Advertisement */}
+          {/* Right Side - Dynamic Advertisement - hidden on mobile, shown on lg+ */}
           {heroAd && showAd && heroAd.image && (
-            <div className="w-80 relative shrink-0">
+            <div className="hidden lg:block w-80 relative shrink-0">
               <button
                 onClick={handleCloseAd}
                 className="absolute -top-3 -right-3 bg-gradient-to-br from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 rounded-full p-1.5 z-20 transition-all duration-300 shadow-lg hover:scale-110"

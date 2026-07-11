@@ -588,7 +588,7 @@ export default function AboutPage() {
             <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-orange-400/5 rounded-full blur-3xl" />
           </div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 md:py-32">
             <div className="max-w-4xl">
               <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-orange-500/20 to-orange-600/20 border border-orange-500/30 text-orange-400 text-sm font-semibold mb-8 backdrop-blur-sm">
                 <span className="relative flex h-2 w-2">
@@ -597,13 +597,13 @@ export default function AboutPage() {
                 </span>
                 Welcome to TechGadget
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-8">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] mb-6 md:mb-8">
                 Your Trusted Destination for{' '}
                 <span className="bg-gradient-to-r from-orange-300 via-orange-400 to-orange-500 bg-clip-text text-transparent">
                   Premium Tech
                 </span>
               </h1>
-              <p className="text-xl text-neutral-300 leading-relaxed max-w-2xl">
+              <p className="text-base sm:text-lg md:text-xl text-neutral-300 leading-relaxed max-w-2xl">
                 At TechGadget, we're passionate about bringing you the latest technology 
                 at the best prices. Quality, authenticity, and exceptional service — 
                 that's our promise to you.
@@ -652,11 +652,11 @@ export default function AboutPage() {
                   <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
                   Who We Are
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-6">
                   Leading the Way in{' '}
                   <span className="text-orange-500">Tech Retail</span>
                 </h2>
-                <div className="space-y-5 text-slate-600 leading-relaxed text-lg">
+                <div className="space-y-4 md:space-y-5 text-slate-600 leading-relaxed text-base md:text-lg">
                   <p className="font-medium text-slate-700">
                     TechGadget is a premier online retailer of mobiles, tablets, laptops, 
                     accessories, and cutting-edge gadgets.

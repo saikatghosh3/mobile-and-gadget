@@ -49,7 +49,7 @@ export default function CategoryProductsSection({ category, onAddToCart }) {
     <section className="py-14 bg-white border-b border-neutral-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header row */}
-        <div className="flex items-end justify-between mb-8">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6 md:mb-8">
           <div>
             {/* Category icon + name */}
             <div className="flex items-center gap-2 mb-1">
@@ -83,7 +83,7 @@ export default function CategoryProductsSection({ category, onAddToCart }) {
 
           <Link
             href={`/shop?category=${category.slug}`}
-            className="text-orange-500 hover:text-orange-600 font-semibold inline-flex items-center gap-1.5 transition-colors group text-sm flex-shrink-0 ml-4"
+            className="text-orange-500 hover:text-orange-600 font-semibold inline-flex items-center gap-1.5 transition-colors group text-sm flex-shrink-0 sm:ml-4"
           >
             View More
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />

@@ -88,11 +88,11 @@ function CartPageContent() {
               {cart.map((item) => (
                 <div
                   key={item._id}
-                  className="bg-white rounded-2xl border border-neutral-200 p-6 flex gap-4"
+                  className="bg-white rounded-2xl border border-neutral-200 p-4 sm:p-6 flex gap-3 sm:gap-4"
                 >
                   <Link
                     href={`/product/${item.slug}`}
-                    className="w-24 h-24 flex-shrink-0 bg-neutral-100 rounded-lg overflow-hidden"
+                    className="w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0 bg-neutral-100 rounded-lg overflow-hidden"
                   >
                     {item.images && item.images[0] ? (
                       <img
@@ -107,14 +107,14 @@ function CartPageContent() {
                     )}
                   </Link>
 
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-0">
                     <Link href={`/product/${item.slug}`}>
-                      <h3 className="font-semibold text-neutral-900 hover:text-orange-500 transition-colors">
+                      <h3 className="font-semibold text-neutral-900 hover:text-orange-500 transition-colors text-sm sm:text-base line-clamp-2">
                         {item.name}
                       </h3>
                     </Link>
-                    <p className="text-sm text-neutral-500">{item.brand}</p>
-                    <p className="text-lg font-semibold text-neutral-900 mt-2">
+                    <p className="text-xs sm:text-sm text-neutral-500">{item.brand}</p>
+                    <p className="text-base sm:text-lg font-semibold text-neutral-900 mt-1 sm:mt-2">
                       {formatPrice(item.price)}
                     </p>
                   </div>
